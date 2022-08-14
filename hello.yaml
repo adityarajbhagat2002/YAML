@@ -1,0 +1,28 @@
+#key values
+
+
+"apple " : "it is a fruit"
+1: " this is my roll no "
+
+--- #yaml will know these are different documnets
+
+# representing lists
+- apple
+- mango
+- banana
+- Apple
+
+---
+ #block style
+
+cities : 
+- new delhi 
+- mumbai
+- bangalore
+- kolkata
+---
+
+cities : [new delhi , mumbai]
+---
+{mango : "yellow fruit" ,age : 45}
+

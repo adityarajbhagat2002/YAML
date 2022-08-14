@@ -1,0 +1,47 @@
+#String variable
+
+myself : aditya raj bhagat
+fruit : " apple"
+job : 'none'
+
+# write a single line in multiple lines
+
+messege : >
+this is will all be all in single line 
+this is done using greater than sign
+
+number : 5424
+
+marks : 34.54
+
+#boolean type
+booleanValue : !!bool  No  #n ,N ,false,FALSE
+
+#SPECIFYING THE TYPE
+
+zero : !!int 0 
+positiveNumber : !!int 45
+negativeNumber : !!int -45
+binaryNum : !!int 0101010
+commaVlaues : !!int +540_000 #(to store 540,000)
+exponentioal number : 6.0231
+
+
+#floating point number 
+marks: !!float  56.89
+infinite: !!float .inf
+not a num : .nan
+stringtype : !!str aditya
+
+#null
+name : !!null  Null #or null NULL ~
+~ : this is a null key
+
+#date and time
+date : !!timestamp  2002-12-14
+indian time : 2001-12-15T02:59:43.1Z +5:30
+
+
+
+
+
