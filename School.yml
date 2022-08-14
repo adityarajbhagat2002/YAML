@@ -1,0 +1,8 @@
+---
+School:
+  - name: DPS
+    Principal: PK
+    Students:
+      - rollno: 12
+        name: aditya
+        marks: 69

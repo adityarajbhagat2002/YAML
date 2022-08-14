@@ -1,0 +1,73 @@
+student : !!seq
+- marks
+- name
+- roll_no
+
+#some of the keys of the seq will be empty
+#which is known as sparse seq
+
+- hey
+- how
+-
+- Null
+
+#key :  value pairs are called maps
+
+!!map
+
+#nested maping : map within a map
+name : aditya raj bhagat
+role : {age: 20,job: student}
+
+#pairs can have duplicate values 
+
+pair example: !!pairs
+- job : student
+- job : teacher
+
+#same as
+pair example : !!pairs [job: student ,job : teacher]
+#this will be an array of hashtables
+
+
+# !!set will allow you to have uinque values 
+names : !!set
+? aditya
+? bhagat
+? rahul
+
+
+# dictionary !!omap it helps to let key values have 
+#their sequence
+
+people : !!omap
+- ADITYA: 
+     NAME: aditya raj bhagat
+     age : 78
+     height : 456
+- rohit :
+     name: rohit sah
+     age : 23
+     height : 434
+
+
+# reusing some properties using anchors
+
+
+likings : &likes
+    fav fruit: mango
+    dislikes: graphes
+
+# rather than writing again and again we are gonna
+#use anchors
+person :
+    name: aditya
+    << : *likes
+
+#you  can also override 
+
+person2 :
+    name: raj
+    << : *likes
+    dislikes: berries
+
